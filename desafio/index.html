@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#EDE9E1">
+  <title>CTL · Uma solução sua no ar em 7 dias</title>
+  <meta name="description" content="Um problema que você conhece. Uma solução sua no ar em 7 dias. Com IA, sem programar e sem largar o emprego. De R$997 por R$147 à vista ou 12x de R$15,20.">
+  <meta property="og:title" content="Uma solução sua no ar em 7 dias · CTL">
+  <meta property="og:description" content="Com IA, sem programar e sem largar o emprego. De R$997 por R$147 à vista ou 12x de R$15,20.">
+  <meta property="og:type" content="website">
+  <link rel="preload" href="../assets/fonts/bricolage-grotesque-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/landing.css">
+</head>
+<body>
+  <main>
+    <!-- HERO + JOGO DO CRACHÁ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="pill"><span class="pill-dot" aria-hidden="true"></span>Desafio de 7 dias</p>
+          <h1 id="hero-title">Um problema que você conhece. <em>Uma solução sua no ar em 7 dias.</em></h1>
+          <p class="hero-lead">Com IA, sem programar e sem largar o emprego.</p>
+          <p class="price-line">De <del>R$997</del> por <strong>R$147 à vista</strong> ou 12x de R$15,20 <span>(R$182,40 no total)</span></p>
+          <div class="hero-cta">
+            <a class="btn btn-gold" data-cta href="#">Quero entrar agora</a>
+          </div>
+          <p class="hero-fine">7 dias para pedir reembolso. Direito do consumidor.</p>
+        </div>
+
+        <div class="game" id="game" data-step="0">
+          <div class="game-head">
+            <p class="game-step" id="game-step">O problema</p>
+            <h2 class="game-title" id="game-title">Hoje só esta porta abre.</h2>
+            <p class="game-text" id="game-text">Um exemplo, não a única história. Arraste o crachá.</p>
+          </div>
+
+          <div class="stage-wrap">
+          <div class="stage" id="stage" aria-hidden="true">
+            <svg class="lanyard" id="lanyard" preserveAspectRatio="none">
+              <path class="lanyard-strap" id="strap" d=""/>
+              <path class="lanyard-stitch" id="stitch" d=""/>
+            </svg>
+            <span class="stage-anchor"></span>
+
+            <div class="reader" id="reader">
+              <span class="reader-zone" aria-hidden="true"></span>
+              <span class="reader-led"></span>
+              <svg class="reader-wave" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path class="rw" d="M14 13a10 10 0 0 1 0 14"/><path class="rw" d="M19.5 9a16 16 0 0 1 0 22"/><path class="rw" d="M25 5a22 22 0 0 1 0 30"/></svg>
+              <span class="reader-screen" id="reader-screen">Aproxime</span>
+              <span class="reader-post"></span>
+              <span class="sparks" id="sparks"></span>
+            </div>
+
+
+            <article class="badge badge-corp" id="badge-corp">
+              <span class="badge-slot"></span>
+              <header class="badge-band"><span>Empresa S.A.</span><b>CLT</b></header>
+              <div class="badge-photo"><svg viewBox="0 0 60 60" aria-hidden="true"><circle cx="30" cy="23" r="11" fill="#9FB0C4"/><path d="M8 58c2-13 11-20 22-20s20 7 22 20z" fill="#9FB0C4"/></svg></div>
+              <p class="badge-name">Colaborador(a)</p>
+              <p class="badge-meta">Matrícula 0041-2785</p>
+              <svg class="badge-barcode" viewBox="0 0 100 18" preserveAspectRatio="none" aria-hidden="true"><g fill="currentColor"><rect x="0" width="2" height="18"/><rect x="4" width="1" height="18"/><rect x="7" width="3" height="18"/><rect x="12" width="1" height="18"/><rect x="15" width="2" height="18"/><rect x="19" width="4" height="18"/><rect x="25" width="1" height="18"/><rect x="28" width="2" height="18"/><rect x="32" width="1" height="18"/><rect x="35" width="3" height="18"/><rect x="40" width="2" height="18"/><rect x="44" width="1" height="18"/><rect x="47" width="4" height="18"/><rect x="53" width="1" height="18"/><rect x="56" width="2" height="18"/><rect x="60" width="3" height="18"/><rect x="65" width="1" height="18"/><rect x="68" width="2" height="18"/><rect x="72" width="1" height="18"/><rect x="75" width="4" height="18"/><rect x="81" width="2" height="18"/><rect x="85" width="1" height="18"/><rect x="88" width="3" height="18"/><rect x="93" width="1" height="18"/><rect x="96" width="4" height="18"/></g></svg>
+              <span class="badge-holo"></span>
+            </article>
+
+            <article class="badge badge-own" id="badge-own" hidden>
+              <span class="badge-slot"></span>
+              <header class="badge-band"><span id="own-band">Meu projeto</span><b>CTL</b></header>
+              <div class="badge-photo"><span class="badge-initial" id="own-initial">?</span></div>
+              <p class="badge-name" id="own-name">Seu nome</p>
+              <p class="badge-meta" id="own-role">Fundador(a)</p>
+              <p class="badge-status"><span></span>Em construção</p>
+              <span class="badge-holo"></span>
+            </article>
+          </div>
+
+          <!-- Porta de oportunidades: abre quando o acesso é liberado -->
+          <div class="door" id="door" hidden>
+            <div class="room">
+              <span class="room-rays" aria-hidden="true"></span>
+              <span class="room-burst" id="room-burst" aria-hidden="true"></span>
+              <p class="room-hello" id="room-hello">Bem-vindo ao seu projeto.</p>
+              <div class="room-items" id="room-items" role="group" aria-label="Oportunidades para pegar"></div>
+              <p class="room-count" id="room-count"></p>
+            </div>
+            <div class="door-leaf door-left" aria-hidden="true"><span class="door-panel"></span><span class="door-panel"></span><span class="door-handle"></span></div>
+            <div class="door-leaf door-right" aria-hidden="true"><span class="door-panel"></span><span class="door-panel"></span><span class="door-handle"></span></div>
+            <span class="door-seam" aria-hidden="true"></span>
+          </div>
+          </div>
+
+          <div class="game-controls">
+            <label class="name-field" id="name-field" hidden>
+              <span>Seu primeiro nome</span>
+              <input id="name-input" type="text" maxlength="16" autocomplete="given-name" placeholder="Ex.: Ana" enterkeyhint="done">
+            </label>
+            <div class="path-choices" id="path-choices" role="group" aria-label="Onde você quer construir?" hidden>
+              <button class="path-btn" type="button" data-path="fora"><strong>Um projeto meu</strong><small>Fora do expediente, para ter renda extra</small></button>
+              <button class="path-btn" type="button" data-path="dentro"><strong>Uma ideia nova na empresa</strong><small>Dentro do meu trabalho, para crescer onde estou</small></button>
+            </div>
+            <button class="btn btn-ghost game-action" id="game-action" type="button">Passar o crachá</button>
+            <a class="btn btn-gold game-cta" id="game-cta" data-cta href="#" hidden>Quero entrar agora</a>
+            <button class="game-reset" id="game-reset" type="button" hidden>Jogar de novo</button>
+          </div>
+          <p class="visually-hidden" id="game-live" aria-live="polite"></p>
+          <p class="game-note">Simulação. Empresa e crachá fictícios.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSTRUA, TESTE, LANCE -->
+    <section class="days" id="como-funciona" aria-labelledby="days-title">
+      <div class="wrap">
+        <p class="kicker">Os 7 dias</p>
+        <h2 id="days-title" class="section-title">Construa. Teste. <em>Lance.</em></h2>
+        <p class="section-lead">Uma hora por dia. Você entra e já tem o método. Não precisa saber nada antes de começar.</p>
+        <div class="path-cards">
+          <article class="path-card">
+            <p class="path-n">1</p>
+            <h3>Construa</h3>
+            <p>Você escolhe um problema que conhece. A IA monta a primeira versão, sem programar.</p>
+          </article>
+          <article class="path-card">
+            <p class="path-n">2</p>
+            <h3>Teste</h3>
+            <p>Você mostra para gente de verdade, ouve o que responde e ajusta o que importa.</p>
+          </article>
+          <article class="path-card">
+            <p class="path-n">3</p>
+            <h3>Lance</h3>
+            <p>A solução entra no ar. Você começa a vender, com um plano para achar os primeiros clientes.</p>
+          </article>
+        </div>
+        <div class="buy">
+          <p class="price-line">De <del>R$997</del> por <strong>R$147 à vista</strong> ou 12x de R$15,20 <span>(R$182,40 no total)</span></p>
+          <a class="btn btn-gold" data-cta href="#">Quero entrar agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUALQUER ÁREA: VITRINE DE APPS (SaaS) -->
+    <section class="areas" id="areas" aria-labelledby="areas-title">
+      <div class="wrap">
+        <div class="areas-head">
+          <p class="kicker">A solução, na prática</p>
+          <h2 id="areas-title" class="section-title">É uma solução <em>da sua área.</em></h2>
+          <p class="section-lead">Toque na sua profissão. O exemplo mostra o tipo de produto que o desafio te ajuda a criar.</p>
+        </div>
+        <div class="area-chips" id="area-chips" role="tablist" aria-label="Escolha a sua área"></div>
+        <div class="saas">
+          <div class="saas-phone">
+            <div class="dev-toggle" role="group" aria-label="Ver a solução no">
+              <button type="button" class="dev-btn" data-dev="phone" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Celular</button>
+              <button type="button" class="dev-btn" data-dev="desk" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4.5" width="16" height="11" rx="1.5"/><path d="M2 19.5h20"/></svg>Computador</button>
+            </div>
+            <div class="device is-phone" id="device">
+              <span class="demo-tag">Demonstração</span>
+              <div class="dev-bar" aria-hidden="true"><i></i><i></i><i></i><span id="dev-url"></span></div>
+              <span class="phone-notch" aria-hidden="true"></span>
+              <div class="phone-screen" id="phone-screen" role="region" aria-label="Solução de exemplo"></div>
+              <span class="dev-base" aria-hidden="true"></span>
+            </div>
+            <p class="phone-hint" id="phone-hint">Toque na solução para testar a demonstração.</p>
+          </div>
+          <article class="saas-info" id="saas-info" aria-live="polite"></article>
+        </div>
+        <div class="buy">
+          <p class="price-line">De <del>R$997</del> por <strong>R$147 à vista</strong> ou 12x de R$15,20 <span>(R$182,40 no total)</span></p>
+          <a class="btn btn-gold" data-cta href="#">Quero entrar agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEM CRIOU -->
+    <section class="founder" id="quem-criou" aria-labelledby="founder-title">
+      <div class="wrap founder-grid">
+        <div class="founder-copy">
+          <p class="kicker">Quem criou · Igor Barroso</p>
+          <h2 id="founder-title" class="section-title">Eu também <em>usava crachá.</em></h2>
+          <p>Sou o Igor Barroso. Durante anos, minhas contas dependiam de um salário. Aprendi a criar produtos digitais por assinatura e <strong>construí negócios que faturaram mais de R$5 milhões.</strong></p>
+          <p>Hoje trabalho de casa, perto da minha família, e <strong>decido o meu próprio tempo.</strong> Criei o CTL para ajudar você a dar o primeiro passo, do jeito que eu queria ter tido.</p>
+          <p class="founder-sign">Igor Barroso, fundador do CTL</p>
+        </div>
+        <div class="gallery">
+          <div class="gallery-track" id="gallery" tabindex="0" aria-label="Fotos da trajetória do Igor. Role para o lado.">
+            <figure class="shot shot-badge">
+              <img src="../assets/images/igor-clt.jpg" alt="Igor no início da carreira, quando dependia de um salário" width="545" height="565">
+              <figcaption><b>Antes</b>Um salário pagava tudo</figcaption>
+            </figure>
+            <figure class="shot"><img src="../assets/images/igor-depois-02.jpg" alt="Igor em um evento de tecnologia" width="618" height="1100" loading="lazy" decoding="async"><figcaption><b>Depois</b>Novos projetos</figcaption></figure>
+            <figure class="shot"><img src="../assets/images/igor-depois-03.jpg" alt="Igor trabalhando no computador" width="618" height="1100" loading="lazy" decoding="async"><figcaption><b>Depois</b>Construindo em casa</figcaption></figure>
+            <figure class="shot"><img src="../assets/images/igor-depois-01.jpg" alt="Igor em uma viagem" width="619" height="1100" loading="lazy" decoding="async"><figcaption><b>Depois</b>Mais liberdade</figcaption></figure>
+            <figure class="shot"><img src="../assets/images/igor-depois-04.jpg" alt="Igor assistindo a um jogo de basquete em uma arena" width="1100" height="1955" loading="lazy" decoding="async"><figcaption><b>Depois</b>Tempo para viver o que gosta</figcaption></figure>
+          </div>
+          <div class="gallery-nav">
+            <button type="button" id="gallery-prev" aria-label="Foto anterior"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+            <span id="gallery-count">1 de 5</span>
+            <button type="button" id="gallery-next" aria-label="Próxima foto"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="testimonials" id="depoimentos" hidden aria-labelledby="testimonials-title">
+      <div class="wrap">
+        <p class="kicker">Quem já fez</p>
+        <h2 id="testimonials-title" class="section-title">Quem fez, <em>conta como foi.</em></h2>
+        <div class="testimonials-grid" id="testimonials-grid"></div>
+        <div class="buy">
+          <p class="price-line">De <del>R$997</del> por <strong>R$147 à vista</strong> ou 12x de R$15,20 <span>(R$182,40 no total)</span></p>
+          <a class="btn btn-gold" data-cta href="#">Quero entrar agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREÇO -->
+    <section class="price" id="entrega" aria-labelledby="price-title">
+      <div class="wrap price-grid">
+        <div class="price-copy">
+          <p class="kicker">Preço de lançamento</p>
+          <h2 id="price-title" class="section-title">O desafio, <em>por dentro.</em></h2>
+          <p class="section-lead">Sete dias para tirar a sua solução do zero, com IA, e começar a vender.</p>
+          <p class="price-line">De <del>R$997</del> por <strong>R$147 à vista</strong> ou 12x de R$15,20 <span>(R$182,40 no total)</span></p>
+        </div>
+        <div class="price-card is-revealed">
+          <p class="price-tag">Preço de lançamento</p>
+          <p class="price-old">De <del>R$997</del> por</p>
+          <p class="price-now"><small>à vista R$</small>147</p>
+          <p class="price-or">ou 12x de R$15,20 <span>(R$182,40 no total)</span></p>
+          <ul class="price-list" id="price-list"></ul>
+          <div class="price-total"><span>Valor de tudo</span><b id="price-sum">R$997</b></div>
+          <p class="price-today">Preço de lançamento: <b>R$147 à vista</b> ou 12x de R$15,20</p>
+          <a class="btn btn-gold price-btn" data-cta href="#">Quero entrar agora</a>
+          <p class="price-guarantee"><b>7 dias para pedir reembolso.</b> Não gostou? Devolvemos tudo. É o direito do consumidor em compra pela internet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- É PRA VOCÊ? -->
+    <section class="fit" id="fit" aria-labelledby="fit-title">
+      <div class="wrap">
+        <p class="kicker">Antes de entrar</p>
+        <h2 id="fit-title" class="section-title">Entra quem vai fazer. <em>Não quem espera milagre.</em></h2>
+        <div class="fit-grid">
+          <div class="fit-col fit-yes"><p class="fit-tag">Entra</p><h3>Para você</h3><ul id="fit-yes"></ul></div>
+          <div class="fit-col fit-no"><p class="fit-tag">Passe</p><h3>Não é para você</h3><ul id="fit-no"></ul></div>
+        </div>
+        <div class="fit-close">
+          <p class="price-line">De <del>R$997</del> por <strong>R$147 à vista</strong> ou 12x de R$15,20 <span>(R$182,40 no total)</span></p>
+          <a class="btn btn-gold" data-cta href="#">Quero entrar agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOCÊ SE RECONHECE -->
+    <section class="check" aria-labelledby="check-title">
+      <div class="wrap check-grid">
+        <div>
+          <p class="kicker">É para você?</p>
+          <h2 id="check-title" class="section-title">Você se <em>reconhece?</em></h2>
+          <p class="section-lead">Pode ser vontade de criar algo, ou a renda inteira num salário só. Os dois cabem aqui.</p>
+        </div>
+        <div>
+          <div class="check-list" id="check-list" role="group" aria-label="Frases para marcar"></div>
+          <div class="check-result" aria-live="polite">
+            <div class="check-meter"><span id="check-meter"></span></div>
+            <p id="check-text">Nenhuma marcada ainda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="numbers" aria-labelledby="numbers-title">
+      <div class="wrap">
+        <p class="kicker">Por que agora</p>
+        <h2 id="numbers-title" class="section-title">Quem só espera, <em>fica para trás.</em></h2>
+        <p class="section-lead numbers-lead">A IA já muda o trabalho. Quem constrói com ela sai na frente de quem só cumpre tarefa.</p>
+        <div class="stats" id="stats" role="region" aria-roledescription="carrossel" aria-label="Dados sobre IA e trabalho"></div>
+        <div class="stats-dots" id="stats-dots" role="tablist" aria-label="Escolher dado"></div>
+        <p class="numbers-note">Não é um aviso de demissão. É o motivo para ter um projeto seu, além do salário.</p>
+        <div class="buy">
+          <a class="btn btn-gold" data-cta href="#">Quero entrar agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- A GRANA: CONTA DA RECORRÊNCIA (simulação) -->
+    <section class="grana" id="grana" aria-labelledby="grana-title">
+      <div class="wrap grana-grid">
+        <div class="grana-copy">
+          <p class="kicker grana-k">A conta</p>
+          <h2 id="grana-title" class="section-title">Cada cliente paga <em>todo mês.</em></h2>
+          <p class="section-lead">Você constrói a solução uma vez. Quem assina, paga de novo. Faça a conta.</p>
+          <p class="grana-provoke">Seu salário tem teto. <b>Cliente não tem.</b></p>
+          <figure class="mascote">
+            <div class="mascote-fig"><img class="mascote-img" src="../assets/images/mascote-ctl.png" alt="Mascote do CTL, de cartola, segurando notas" width="891" height="1005"></div>
+            <blockquote class="mascote-fala"><p>Só ganha no jogo da vida <em>quem se arrisca.</em></p></blockquote>
+          </figure>
+        </div>
+        <div class="grana-calc" id="grana-calc">
+          <div class="gc-stage" aria-live="polite">
+            <p class="gc-eyebrow">Imagine isso caindo todo mês</p>
+            <div class="gc-hero">
+              <div class="gc-coins" id="gc-coins" aria-hidden="true"></div>
+              <b id="gc-mrr">R$197</b>
+            </div>
+            <p class="gc-year">No ano, <b id="gc-arr">R$2.364</b> sem você vender de novo.</p>
+          </div>
+          <div class="gc-controls">
+            <div class="gc-block">
+              <p class="gc-label" id="gc-price-label">Cada cliente paga</p>
+              <div class="gc-prices" id="gc-prices" role="radiogroup" aria-labelledby="gc-price-label"></div>
+            </div>
+            <div class="gc-block">
+              <div class="gc-head"><label class="gc-label" for="gc-clients">Clientes</label><b class="gc-n" id="gc-n">1</b></div>
+              <input class="gc-range" type="range" id="gc-clients" min="0" max="1000" step="1" value="1" aria-label="Quantidade de clientes">
+              <div class="gc-adds"><button type="button" class="gc-add" data-add="1">+1</button><button type="button" class="gc-add" data-add="10">+10</button><button type="button" class="gc-add" data-add="100">+100</button></div>
+            </div>
+          </div>
+          <p class="gc-note">Simulação: a conta muda com o preço e a quantidade de clientes.</p>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="buy">
+          <p class="price-line">De <del>R$997</del> por <strong>R$147 à vista</strong> ou 12x de R$15,20 <span>(R$182,40 no total)</span></p>
+          <a class="btn btn-gold" data-cta href="#">Quero entrar agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPARÊNCIA -->
+    <section class="honest" id="transparencia" aria-labelledby="honest-title">
+      <div class="wrap honest-box">
+        <p class="kicker">Com clareza</p>
+        <h2 id="honest-title" class="section-title">O que a gente entrega. <em>E o que não cabe prometer.</em></h2>
+        <p>O CTL entrega o método, as aulas e o caminho para criar a primeira versão e começar a vender. Ninguém pode garantir quantos clientes você vai ter, nem quanto vai ganhar. A conta da assinatura é uma simulação. O resultado depende do que você fizer nos 7 dias e depois deles.</p>
+      </div>
+    </section>
+
+    <!-- DÚVIDAS -->
+    <section class="faq" id="duvidas" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div><p class="kicker">As regras · Sem letra miúda</p>
+        <h2 id="faq-title" class="section-title">Dúvidas, <em>sem rodeio.</em></h2></div>
+        <div class="faq-list">
+          <details><summary>E se eu não gostar?</summary><p>Em 7 dias você pede reembolso e devolvemos tudo. É o direito do consumidor em compra pela internet.</p></details>
+          <details><summary>Preciso largar meu emprego?</summary><p>Não. Você faz nas horas livres, sem abrir mão do salário que paga suas contas.</p></details>
+          <details><summary>Preciso saber usar IA ou programar?</summary><p>Não. A gente começa do zero e mostra cada passo com palavras simples.</p></details>
+          <details><summary>Vocês garantem que vou vender?</summary><p>Não. A gente ensina a criar, colocar no ar e começar a vender. Quantos clientes entram depende do que você fizer. Está escrito com clareza acima, em Com clareza.</p></details>
+          <details><summary>Quanto tempo por dia preciso?</summary><p>Cerca de uma hora por dia é suficiente para acompanhar as etapas.</p></details>
+          <details><summary>Funciona na minha área?</summary><p>Funciona em qualquer área em que exista alguém com um problema para resolver. O método é o mesmo: escolher quem você vai ajudar, criar uma solução simples e começar a vender.</p></details>
+          <details><summary>Preciso ter empresa aberta?</summary><p>Não para começar. Quando fizer sentido, o guia mostra o jeito mais barato e simples de formalizar, como o MEI, se a sua atividade permitir. É uma orientação: para casos específicos, vale falar com um contador.</p></details>
+          <details><summary>Posso usar o CTL dentro do meu trabalho?</summary><p>Pode. O mesmo método serve para tirar do papel uma ideia nova na empresa onde você trabalha: um produto, um serviço ou um processo melhor. Combine com a sua liderança antes de usar dados ou o horário da empresa.</p></details>
+          <details><summary>E depois dos 7 dias?</summary><p>Você termina com uma primeira versão no ar e o próximo passo definido. Pode continuar nos novos ciclos da plataforma.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- FECHAMENTO -->
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="wrap closing-inner">
+        <p class="kicker">Sua vez</p>
+        <h2 id="closing-title">Uma solução sua <em>no ar em 7 dias.</em></h2>
+        <p class="price-line">De <del>R$997</del> por <strong>R$147 à vista</strong> ou 12x de R$15,20 <span>(R$182,40 no total)</span></p>
+        <a class="btn btn-gold" data-cta href="#">Quero entrar agora</a>
+        <p class="closing-lead">7 dias para pedir reembolso. Direito do consumidor.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="logo" href="../">ctl<svg class="logo-mark" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M7.2 0h1.6l.4 6.05 4.35-4.1 1.15 1.15-4.1 4.35L16 7.2v1.6l-6.05.4 4.1 4.35-1.15 1.15-4.35-4.1L8.8 16H7.2l-.4-6.05-4.35 4.1-1.15-1.15 4.1-4.35L0 8.8V7.2l6.05-.4-4.1-4.35L3.1 1.3l4.35 4.1z"/></svg></a>
+      <p>Construa. Teste. Lance.</p>
+      <a class="link" href="#inicio" id="to-top">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <p><b>R$147 à vista</b> ou 12x de R$15,20 · R$182,40</p>
+    <a class="btn btn-gold" data-cta href="#" tabindex="-1">Quero entrar</a>
+  </div>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/content.js"></script>
+  <script src="../assets/js/game.js"></script>
+  <script src="../assets/js/landing.js"></script>
+  <script src="../assets/js/saas.js"></script>
+  <script src="../assets/js/board.js"></script>
+  <script src="../assets/js/scroll.js"></script>
+</body>
+</html>
